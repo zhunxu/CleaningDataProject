@@ -28,6 +28,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 Run_analysis.r Step by Step: 
 
 1.Merges the training and the test sets to create one data set. 
+
 To merge the test data
 
 --get subject id from "subject_test.txt"
@@ -38,9 +39,21 @@ To merge the test data
   
 --column bind three files into testbind
 
+To merge the train data
+
+--get subject id from "subject_train.txt"
+
+--get activity label from "y_train.txt"
+
+--get test data from "X_train.txt" with variable name applied from "features.txt"
+  
+--column bind three files into trainbind
+
+Rowbind testbind and trainbind files into total file
+
+2.Extracts only the measurements on the mean and standard deviation for each measurement.  
 
 
-21 2.Extracts only the measurements on the mean and standard deviation for each measurement.  
 22 3.Uses descriptive activity names to name the activities in the data set 
 23 4.Appropriately labels the data set with descriptive variable names.  
 24 
