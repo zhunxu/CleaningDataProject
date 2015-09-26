@@ -29,10 +29,14 @@ Run_analysis.r Step by Step:
 
 1.Merges the training and the test sets to create one data set. 
 To merge the test data
+
 --get subject id from "subject_test.txt"
-  get activity label from "y_test.txt"
-  get test data from "X_test.txt" with variable name applied from "features.txt"
-  column bind three files into testbind
+
+--get activity label from "y_test.txt"
+
+--get test data from "X_test.txt" with variable name applied from "features.txt"
+  
+--column bind three files into testbind
 
 
 
