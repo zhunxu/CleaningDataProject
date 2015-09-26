@@ -19,3 +19,63 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Good luck!
+
+# Run_analysis.r Step by Step: 
+
+1.Merges the training and the test sets to create one data set. 
+
+To merge the test data
+
+--get subject id from "subject_test.txt"
+
+--get activity label from "y_test.txt"
+
+--get test data from "X_test.txt" 
+
+--column bind three files into testbind
+
+--apply first column name as Subject, apply second column name as ActivityLabel, apply rest variable names from "features.txt"
+
+To merge the train data
+
+--get subject id from "subject_train.txt"
+
+--get activity label from "y_train.txt"
+
+--get test data from "X_train.txt" 
+
+--column bind three files into trainbind
+
+--apply first column name as Subject, apply second column name as ActivityLabel, apply rest variable names from "features.txt"
+
+Rowbind testbind and trainbind files into total file
+
+2.Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+--using column name from total file, find vaiables name contain "mean" or "std", make sure "meanFreq" is excluded
+
+--extract from total files that variable name is TRUE from previous step, puls Subject and ActivityLabel columns
+
+3.Uses descriptive activity names to name the activities in the data set 
+
+--create new column Activity based on ActivityLabel
+
+4.Appropriately labels the data set with descriptive variable names. 
+
+--prefix t is replaced by time
+
+--Acc is replaced by Accelerometer
+
+--Gyro is replaced by Gyroscope
+
+--prefix f is replaced by frequency
+
+--Mag is replaced by Magnitude
+
+--BodyBody is replaced by Body
+
+5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+--calculate the average of each variable by activity and subject using aggregate function
+
+--create tidydata.txt file using write.table function
