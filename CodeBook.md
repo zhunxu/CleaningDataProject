@@ -86,73 +86,141 @@ Rowbind testbind and trainbind files into total file
 --create tidydata.txt file using write.table function
 
 # Code book
+  
   name: Subject                                       : subject ID
+  
   name: Activity                                      : activity being measured
+  
   name: timeBodyAccelerometer-mean()-X                : 
+  
   name: timeBodyAccelerometer-mean()-Y                : 
+  
   name: timeBodyAccelerometer-mean()-Z                : 
+  
   name: timeBodyAccelerometer-std()-X                 : 
+  
   name: timeBodyAccelerometer-std()-Y                 : 
+  
   name: timeBodyAccelerometer-std()-Z                 : 
+  
   name: timeGravityAccelerometer-mean()-X             : 
+  
   name: timeGravityAccelerometer-mean()-Y             : 
+  
   name: timeGravityAccelerometer-mean()-Z             : 
+  
   name: timeGravityAccelerometer-std()-X              : 
+  
   name: timeGravityAccelerometer-std()-Y              : 
+  
   name: timeGravityAccelerometer-std()-Z              : 
+  
   name: timeBodyAccelerometerJerk-mean()-X            : 
+  
   name: timeBodyAccelerometerJerk-mean()-Y            : 
+  
   name: timeBodyAccelerometerJerk-mean()-Z            : 
+  
   name: timeBodyAccelerometerJerk-std()-X             : 
+  
   name: timeBodyAccelerometerJerk-std()-Y             : 
+  
   name: timeBodyAccelerometerJerk-std()-Z             : 
+  
   name: timeBodyGyroscope-mean()-X                    : 
+  
   name: timeBodyGyroscope-mean()-Y                    : 
+  
   name: timeBodyGyroscope-mean()-Z                    :
+  
   name: timeBodyGyroscope-std()-X                     : 
+  
   name: timeBodyGyroscope-std()-Y                     : 
+  
   name: timeBodyGyroscope-std()-Z                     : 
+  
   name: timeBodyGyroscopeJerk-mean()-X                : 
+  
   name: timeBodyGyroscopeJerk-mean()-Y                : 
+  
   name: timeBodyGyroscopeJerk-mean()-Z                : 
+  
   name: timeBodyGyroscopeJerk-std()-X                 : 
+  
   name: timeBodyGyroscopeJerk-std()-Y                 :
+  
   name: timeBodyGyroscopeJerk-std()-Z                 :
+  
   name: timeBodyAccelerometerMagnitude-mean()         : 
+  
   name: timeBodyAccelerometerMagnitude-std()          : 
+  
   name: timeGravityAccelerometerMagnitude-mean()      : 
+  
   name: timeGravityAccelerometerMagnitude-std()       : 
+  
   name: timeBodyAccelerometerJerkMagnitude-mean()     : 
+  
   name: timeBodyAccelerometerJerkMagnitude-std()      : 
+  
   name: timeBodyGyroscopeMagnitude-mean()             : 
+  
   name: timeBodyGyroscopeMagnitude-std()              : 
+  
   name: timeBodyGyroscopeJerkMagnitude-mean()         : 
+  
   name: timeBodyGyroscopeJerkMagnitude-std()          : 
+  
   name: frequencyBodyAccelerometer-mean()-X           : 
+  
   name: frequencyBodyAccelerometer-mean()-Y           : 
+  
   name: frequencyBodyAccelerometer-mean()-Z           :
+  
   name: frequencyBodyAccelerometer-std()-X            : 
+  
   name: frequencyBodyAccelerometer-std()-Y            : 
+  
   name: frequencyBodyAccelerometer-std()-Z            : 
+  
   name: frequencyBodyAccelerometerJerk-mean()-X       : 
+  
   name: frequencyBodyAccelerometerJerk-mean()-Y       : 
+  
   name: frequencyBodyAccelerometerJerk-mean()-Z       : 
+  
   name: frequencyBodyAccelerometerJerk-std()-X        : 
+  
   name: frequencyBodyAccelerometerJerk-std()-Y        : 
+  
   name: frequencyBodyAccelerometerJerk-std()-Z        : 
+  
   name: frequencyBodyGyroscope-mean()-X               : 
+  
   name: frequencyBodyGyroscope-mean()-Y               : 
+  
   name: frequencyBodyGyroscope-mean()-Z               :
+  
   name: frequencyBodyGyroscope-std()-X                : 
+  
   name: frequencyBodyGyroscope-std()-Y                :
+  
   name: frequencyBodyGyroscope-std()-Z                :
+  
   name: frequencyBodyAccelerometerMagnitude-std()     : 
+  
   name: frequencyBodyAccelerometerJerkMagnitude-mean(): 
+  
   name: frequencyBodyAccelerometerJerkMagnitude-std() : 
+  
   name: frequencyBodyGyroscopeMagnitude-mean()        : 
+  
   name: frequencyBodyGyroscopeMagnitude-std()         : 
+  
   name: frequencyBodyGyroscopeJerkMagnitude-mean()    : 
+  
   name: frequencyBodyGyroscopeJerkMagnitude-std() 
+
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeAccelerometer-XYZ and timeGyroscope-XYZ. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timeBodyAccelerometer-XYZ and timeGravityAccelerometer-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -166,4 +234,5 @@ These signals were used to estimate variables of the feature vector for each pat
 The set of variables that were estimated from these signals are: 
 
 mean(): Mean value
+
 std(): Standard deviation
